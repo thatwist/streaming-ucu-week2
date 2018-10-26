@@ -19,7 +19,7 @@ lhs1 == rhs1
 
 // Right identity
 val m1 = List(2)
-val lhs2 = m1.flatMap(List(_))
+val lhs2 = m1.flatMap(List(_)) // unit
 val rhs2 = m1
 lhs2 == rhs2
 
