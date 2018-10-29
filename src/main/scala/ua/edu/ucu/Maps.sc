@@ -10,3 +10,6 @@ for((k,v) <- m1) {
   print(v)
   println
 }
+
+
+Set(1, 2, 3)

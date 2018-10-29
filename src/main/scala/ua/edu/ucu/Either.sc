@@ -17,3 +17,21 @@ object EitherLeftRightExample extends App {
     case Right(i) => println("Answer: " + i)
   }
 }
+
+val either1: Either[String, Int] = Right(1)
+val either2: Either[String, Int] = Left("err")
+
+for {
+  e1 <- either1.left
+  e2 <- either2.left
+} yield e2
+
+either1.flatMap(e1 => either2.map(e2 => e2))
+
+
+for {
+  o1 <- Some(1)
+  o2 <- None
+} yield o2
+
+

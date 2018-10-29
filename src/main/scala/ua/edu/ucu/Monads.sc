@@ -29,3 +29,4 @@ val lhs3 = m2.flatMap(f1).flatMap(g1)
 val rhs3 = m2.flatMap(x => f1(x).flatMap(g1))
 lhs3 == rhs3
 
+
