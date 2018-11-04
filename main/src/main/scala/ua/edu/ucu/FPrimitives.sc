@@ -38,7 +38,7 @@ def each(xs: List[Int], fun: Int => Unit) {
 each(List(1,2,3), println)
 
 // currying
-def nDividesM(m : Int)(n : Int) = (n % m == 0)
+def nDividesM(m : Int)(n : Int) = n % m == 0
 // nDividesM: (m: Int)(n: Int) Boolean
 val isEven = nDividesM(2)_
 // isEven: Int => Boolean = <function1>
