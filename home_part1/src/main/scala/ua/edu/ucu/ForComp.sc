@@ -1,6 +1,7 @@
 // #0
-// Following function calculates the largest palindrome from an n-digit number using higher order functions.
-// Rewrite it using for-comprehension
+/*
+ Following function calculates the largest palindrome from an n-digit number using higher order functions.
+ Rewrite it using for-comprehension */
 def largestPalindromeWithHigherOrderFunctions(amountOfDigits: Int): Int = {
   require(amountOfDigits > 1, "amount of digits must be at least 2")
   val fromNumber = Math.pow(10, amountOfDigits - 1).toInt
@@ -29,10 +30,12 @@ val books: List[Book] = List(
   Book("The Java Language Specification",
     List("Gosling, James", "Joy, Bill", "Steele, Guy", "Bracha, Gilad")))
 // #1
-// Find the titles of all books whose author’s last name is "Ullman" using for-comprehensions
+/*
+ Find the titles of all books whose author’s last name is "Ullman" using for-comprehensions*/
 ???
 
 // #2
-// Using for-comprehension, find the names of all authors that have written at least two books in the above database.
+/*
+ Using for-comprehension, find the names of all authors that have written at least two books in the above database.*/
 ???
 
