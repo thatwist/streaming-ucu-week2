@@ -2,7 +2,7 @@
 //  Create a function to generate a Map of numbers
 //  from a to b with its string representation.
 //  e.g. 1 -> "1", 2 -> "2", ..
-//  build reversed Map from string to integer representation.
+//  transform a given Map to have interchanged value-key pairs. ("1"->1, and so on)
 
 // #1
 //  Count words in a file. You can use scala.io.Source.fromFile("") function
