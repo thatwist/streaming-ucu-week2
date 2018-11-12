@@ -1,5 +1,7 @@
 package ua.edu
 
+import java.io.File
+
 package object ucu {
 
   def loadDictionary: List[String] = {
@@ -18,6 +20,14 @@ package object ucu {
     } finally {
       words.close()
     }
+  }
+
+  def resourceAsStream(resource: String): Option[java.io.InputStream] = {
+    val classesDir = new File(getClass.getResource(".").toURI)
+    val projectDir = classesDir.getParentFile.getParentFile.getParentFile.getParentFile.getParentFile.getParentFile
+    val resourceFile: File = ("src" :: "main" :: "resources" :: resource :: Nil)
+      .foldLeft(projectDir)((file, child) => new File(file, child))
+    if (resourceFile.exists) Some(new java.io.FileInputStream(resourceFile)) else None
   }
 
 }

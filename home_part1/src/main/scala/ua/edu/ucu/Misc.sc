@@ -9,7 +9,8 @@
 //  to read contents of the file. To split a String into words use `.split("\\W+")`
 //  You should return an immutable map containing word as a key and number as a count.
 //
-
-val source = scala.io.Source.fromURL(getClass.getResource("/example.txt"))
+import ua.edu.ucu.resourceAsStream
+val source = resourceAsStream(resource = "example.txt")
+  .map(scala.io.Source.fromInputStream)
 
 ???
