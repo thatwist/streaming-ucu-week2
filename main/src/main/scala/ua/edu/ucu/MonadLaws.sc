@@ -1,5 +1,3 @@
-// for comp
-
 // Monad laws
 // List
 

@@ -1,4 +1,4 @@
-package ua.edu.ucu
+package ua.edu.ucu.bonus
 
 import scala.language.higherKinds
 
