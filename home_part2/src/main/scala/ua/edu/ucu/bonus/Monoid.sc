@@ -32,4 +32,8 @@ object listMonoid extends Monoid[???] {
 // Either monoid
 
 // TODO
+// Boolean monoid
+
+// TODO
+// redefine list sum function using monoid instance
 def sum[A](xs: List[A])(/*???*/): A = ???
