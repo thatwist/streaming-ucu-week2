@@ -18,5 +18,5 @@ object ListDef {
   def sum(l: List[Int]): Int = ???
 
   // TODO - implement in terms of foldRight
-  def product(l: List[Double]): Int = ???
+  def product(l: List[Int]): Int = ???
 }
