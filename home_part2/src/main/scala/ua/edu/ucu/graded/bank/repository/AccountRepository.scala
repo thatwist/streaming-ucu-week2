@@ -7,14 +7,14 @@ import ua.edu.ucu.graded.bank.model.{Account, Balance}
 import collection.mutable.{Map => MMap}
 
 trait AccountRepository extends Repository[Account, String] {
-  def query(no: String): Account // TODO - Try[Option[Account]]
-  def store(a: Account): Account // TODO - Try[Account]
-  def balance(no: String): Balance = { // TODO - Try[Balance]
+  def query(no: String): Account // TODO - convert return type to Try[Option[Account]]
+  def store(a: Account): Account // TODO - convert return type to Try[Account]
+  def balance(no: String): Balance = { // TODO - convert return type to Try[Balance]
     // TODO
     // query(no) - fail if not found, return account.balance if Ok
     ???
   }
-  def query(openedOn: Date): Seq[Account] // TODO Try[Seq[Account]]
+  def query(openedOn: Date): Seq[Account] // TODO convert return type to Try[Seq[Account]]
 }
 
 class AccountRepositoryInMemory extends AccountRepository {

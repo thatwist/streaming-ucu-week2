@@ -8,15 +8,15 @@ import ua.edu.ucu.graded.bank.repository.AccountRepository
 
 trait AccountService[Account, Amount, Balance] {
 
-  def open(no: String, name: String, openingDate: Option[Date]): Account // TODO - Try
+  def open(no: String, name: String, openingDate: Option[Date]): Account // TODO - convert return type to Try
 
-  def close(no: String, closeDate: Option[Date]): Account // TODO - Try
+  def close(no: String, closeDate: Option[Date]): Account // TODO - convert return type to Try
 
-  def debit(no: String, amount: Amount): Account // TODO - Try
+  def debit(no: String, amount: Amount): Account // TODO - convert return type to Try
 
-  def credit(no: String, amount: Amount): Account // TODO - Try
+  def credit(no: String, amount: Amount): Account // TODO - convert return type to Try
 
-  def balance(no: String): Balance // TODO - Try
+  def balance(no: String): Balance // TODO - convert return type to Try
 }
 
 class AccountServiceImpl(
