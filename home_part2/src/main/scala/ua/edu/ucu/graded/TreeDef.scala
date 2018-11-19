@@ -2,6 +2,7 @@ package ua.edu.ucu.graded
 
 object TreeDef {
 
+  // Optionally you can try to implement these root collection interfaces
   sealed trait Tree /* extends Traversable */ /* with Iterable */
   case class Node(value: Int, left: Tree, right: Tree) extends Tree
   case object End extends Tree
