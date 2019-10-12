@@ -57,6 +57,6 @@ val fg = (x: Int) => g(f(x))
 val fg_ = g compose f
 
 // partial application
-def add(a:Int, b:Int) = a +b
+def add(a:Int, b:Int) = a + b
 val fn = add(2,_:Int) // returns a function
 fn(2) // returns 4!
