@@ -1,3 +1,53 @@
+def sqr(x: Int): Int = x * x
+val sqr2 = sqr _
+val sqr1: Int => Int = x => x * x
+
+def sum(a: Int, b: Int): Int = a + b
+type SumFunc = (Int, Int) => Int
+val sum1: SumFunc = (a, b) => a + b
+val sum2:(Int, Int) => Int = (a: Int, b: Int) => a + b
+
+val numbers = List(1, 2, 3)
+
+
+
+val sqrList = numbers
+
+val l = 0 #:: 1 #:: Stream.empty
+
+
+def filter[A](l: List[A], f: A => Boolean): List[A] = ???
+
+
+
+
+class IntQueue {
+  def put(a: Int): Unit = ???
+  def poll: Int = ???
+}
+
+class StringQueue {
+  def put(a: String): Unit = ???
+  def poll: String = ???
+}
+
+class Queue[+A] {
+  def put(a: A): Unit = ???
+  def poll: A = ???
+}
+
+
+class Number {}
+class Integer extends Number {}
+
+val number: Number = new Integer
+
+val queue: Queue[Number] =
+  new Queue[Integer] { }
+
+
+
+
 // Function definition
 val f1: Int => String = _.toString
 // equivalent to:
@@ -57,6 +107,6 @@ val fg = (x: Int) => g(f(x))
 val fg_ = g compose f
 
 // partial application
-def add(a:Int, b:Int) = a +b
+def add(a:Int, b:Int) = a + b
 val fn = add(2,_:Int) // returns a function
 fn(2) // returns 4!
